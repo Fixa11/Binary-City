@@ -1,0 +1,164 @@
+﻿
+@model Binary_City.ViewModel.LinkingVm
+
+<link href="~/Content/multi-select.css" rel="stylesheet" />
+<link href="~/Content/basic.css" rel="stylesheet" />
+<link href="~/Content/dropzone.css" rel="stylesheet" />
+
+
+<h2 class="text-center" style="color:Black; font-weight:500;">
+    Choose Contact for Client
+</h2>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+
+    <input value="@Model.Id" type="hidden" name="id" id="id" />
+    <input value="@ViewBag.SelectedContacts" type="hidden" name="multiple_value" id="multiple_value" />
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card blue-grey darken-2 darken-2 z-depth-2" style="overflow: unset;">
+                <div class="card-content">
+                    <h4 style="color:purple">Client Info </h4>
+
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>
+                                @Html.DisplayName("Name")
+                            </th>
+                            <td class="">
+                                @Html.DisplayFor(modelItem => Model.Client.Name)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                @Html.DisplayName("Client Code")
+                            </th>
+                            <td class="">
+                                @Html.DisplayFor(modelItem => Model.Client.ClientCode)
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">Clients</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6"><h3 class="h3">Avaliable Contact</h3></div>
+                        <div class="col-md-6"><h3 class="h3">Choosen  Contact</h3></div>
+                    </div>
+                    @Html.DropDownList("ContactList", Model.ContactList as SelectList, "", new { @class = "btn btn-default dropdown-toggle form-control", data_placeholder = "Choose Contact...", @multiple = "" })
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="well">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="javascript:history.back()" class="btn btn-block btn-info">Go Back</a>
+            </div>
+            <div class="col-md-6">
+                <input type="submit" value="Save" class="btn btn-block btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/jquery.multi-select.js")
+    @Scripts.Render("~/Scripts/jquery.quicksearch.js")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/dropzonescripts")
+
+    <script type="text/javascript">
+                    $(document)
+                        .ready(function () {
+                            var loadedSelected = [];
+                        });
+    </script>
+
+    <script>
+                    var selected = [];
+                        $('#ContactList').multiSelect(
+                        {
+                            keepOrder: true,
+                            selectableHeader: "<input type='text' class='search-input form-control' autocomplete='off' placeholder='Type to Search...'>",
+                            selectionHeader: "<input type='text' class='search-input form-control' autocomplete='off' placeholder='Type to Search...'>",
+                            afterInit: function (ms) {
+                            var that = this,
+                            $selectableSearch = that.$selectableUl.prev(),
+                            $selectionSearch = that.$selectionUl.prev(),
+                            selectableSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selectable:not(.ms-selected)',
+                            selectionSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selection.ms-selected';
+
+
+
+                        that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                            .on('keydown', function (e) {
+                                if (e.which === 40) {
+                                that.$selectableUl.focus();
+                                    return false;
+                                }
+                            });
+
+                        that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                            .on('keydown', function (e) {
+                                if (e.which == 40) {
+                                that.$selectionUl.focus();
+                                    return false;
+                                }
+                            });
+                    },
+                        afterSelect: function (value, text) {
+                        var get_val = $("#multiple_value").val();
+                        var hidden_val = (get_val != "") ? get_val + "," : get_val;
+                        $("#multiple_value").val(hidden_val + "" + value);
+
+                        this.qs1.cache();
+                        this.qs2.cache();
+
+
+
+                    },
+                    afterDeselect: function (value, text) {
+
+                        var get_val = $("#multiple_value").val();
+                        var new_val = get_val.replace(value, "");
+                        $("#multiple_value").val(new_val);
+
+                        this.qs1.cache();
+                        this.qs2.cache();
+
+                    },
+
+                }
+            );
+
+    </script>
+}

@@ -1,0 +1,60 @@
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Binary City.dll.config
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Binary City.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Binary City.pdb
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\csc.exe
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\csc.exe.config
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\csc.rsp
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\csi.exe
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\csi.rsp
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\System.AppContext.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\vbc.exe
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\vbc.exe.config
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\vbc.rsp
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\VBCSCompiler.exe
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Antlr3.Runtime.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\EntityFramework.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\EntityFramework.SqlServer.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Newtonsoft.Json.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Helpers.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Mvc.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Optimization.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Razor.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.WebPages.Deployment.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.WebPages.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.WebPages.Razor.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\WebGrease.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\EntityFramework.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\EntityFramework.SqlServer.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Helpers.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Mvc.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Optimization.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.Razor.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.WebPages.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.WebPages.Deployment.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\System.Web.WebPages.Razor.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Newtonsoft.Json.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Antlr3.Runtime.pdb
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\obj\Debug\Binary City.csproj.AssemblyReference.cache
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\obj\Debug\Binary City.csproj.CoreCompileInputs.cache
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\obj\Debug\Binary City.csproj.CopyComplete
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\obj\Debug\Binary City.dll
+C:\Users\f.silvanus\source\repos\Binary City\Binary City\obj\Debug\Binary City.pdb

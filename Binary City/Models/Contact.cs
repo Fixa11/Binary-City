@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
+
 
 namespace Binary_City.Models
 {
+   
     [Table("Contact")]
+  
     public class Contact
     {
+      
         public Contact()
         {
             ClientsContacts = new HashSet<ClientsContact>();

@@ -41,6 +41,13 @@ namespace Binary_City.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (emailValidation(Contact.Email))
+                {
+                    ModelState.AddModelError("Email", "Email address already exist");
+                    return View(Contact);
+                }
+
+
                 _BinaryCityModel.Contacts.Add(Contact);
                 _BinaryCityModel.SaveChanges();
 
@@ -129,6 +136,17 @@ namespace Binary_City.Controllers
 
 
             return Json(Contacts, JsonRequestBehavior.AllowGet);
+        }
+
+
+        public bool emailValidation(string email)
+        {
+            var exist = (from db in _BinaryCityModel.Contacts
+                            where db.Email == email
+                            select db).FirstOrDefault();
+
+            return exist == null ? false : true;
+
         }
 
 

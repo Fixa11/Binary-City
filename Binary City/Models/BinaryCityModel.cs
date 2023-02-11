@@ -16,5 +16,13 @@ namespace Binary_City.Models
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<ClientsContact> ClientsContacts { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder builder)
+        {
+            builder.Entity<Contact>()
+              .HasIndex(Contact => Contact.Email)
+                .IsUnique();
+        }
+
     }
 }
